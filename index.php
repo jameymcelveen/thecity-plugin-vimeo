@@ -32,6 +32,16 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 		ul { list-style-type: none; margin: 0; padding: 0; }
 		li { display: inline; padding: 0; margin: 10px 2px; }
 		img { border: 0; width: 200px; height: 150px; }
+		.imagedropshadow {
+			padding: 5px;
+			border: solid 1px #EFEFEF;
+		}
+		a:hover img.imagedropshadow {
+			border: solid 1px #CCC;
+			-moz-box-shadow: 1px 1px 5px #999;
+			-webkit-box-shadow: 1px 1px 5px #999;
+		        box-shadow: 1px 1px 5px #999;
+		}
 	</style>
 </head>
 <body>
@@ -44,7 +54,7 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 			<li>
 				<a href="<?php echo $video->url ?>">
 					 <div class="thumb">
-						<img src="<?php echo $video->thumbnail_medium ?>" />
+						<img class="imagedropshadow" src="<?php echo $video->thumbnail_medium ?>" />
 					</div>
 					</a>
 			</li>
