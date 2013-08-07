@@ -53,10 +53,8 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 		<?php foreach ($videos->video as $video): ?>
 			<li>
 				<a href="<?php echo $video->url ?>">
-					 <div class="thumb">
-						<img class="imagedropshadow" src="<?php echo $video->thumbnail_medium ?>" />
-					</div>
-					</a>
+					<img class="imagedropshadow" src="<?php echo $video->thumbnail_medium ?>" />
+				</a>
 			</li>
 		<?php endforeach ?>
 		</ul>
