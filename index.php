@@ -23,7 +23,7 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
 	<title>Vimeo Simple API Example</title>
@@ -46,13 +46,8 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 		<?php endforeach ?>
 		</ul>
 	</div>
-	<script type="text/javascript" src="xd.js"></script>
-	<script type="text/javascript">
-		var src = 'https://acstdev.onthecity.org/#' + encodeURIComponent(document.location.href);
-		//document.getElementById("xd_frame").src = src;
-
-	   	XD.postMessage(600, src, frames[0]);
-
-	</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="tc-plugin-helper.js"></script>
+	<script>$(TheCity.PluginHelper.initPlugin('acstdev'))</script>
 </body>
 </html>
