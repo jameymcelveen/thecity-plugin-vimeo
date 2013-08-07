@@ -44,10 +44,6 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 		}
 	</style>
 </head>
-<body>
-
-	<h1>Sermons</h1>
-	<p id="bio"><?php echo $user->user->bio ?></p>
 	<div id="thumbs">
 		<ul>
 		<?php foreach ($videos->video as $video): ?>
