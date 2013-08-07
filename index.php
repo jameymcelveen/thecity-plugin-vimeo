@@ -12,9 +12,8 @@
 		<ul>
 		<?php foreach ($videos->video as $video): ?>
 			<li>
-				<a href="<?php echo $video->url ?>">
-					<img class="imagedropshadow" src="<?php echo $video->thumbnail_medium ?>" />
-				</a>
+				<a href="<?php echo $video->url ?>" target="_blank" alt="">
+					<img class="imagedropshadow" src="<?php echo $video->thumbnail_medium ?>"/></a>
 			</li>
 		<?php endforeach ?>
 		</ul>
