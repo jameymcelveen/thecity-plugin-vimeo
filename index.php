@@ -30,7 +30,7 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 	<style>
 		ul { list-style-type: none; margin: 0; padding: 0; }
 		li { display: inline; padding: 0; margin: 10px 2px; }
-		img { border: 0; }
+		img { border: 0; width: 200px; height: 150px; }
 	</style>
 </head>
 <body>
