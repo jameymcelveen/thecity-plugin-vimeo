@@ -48,7 +48,7 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 	</div>
 	<script type="text/javascript" src="xd.js"></script>
 	<script type="text/javascript">
-		var src = 'http://acstdev.onthecity.org/#' + encodeURIComponent(document.location.href);
+		var src = 'https://acstdev.onthecity.org/#' + encodeURIComponent(document.location.href);
 		//document.getElementById("xd_frame").src = src;
 
 	   	XD.postMessage(200, src, frames[0]);
