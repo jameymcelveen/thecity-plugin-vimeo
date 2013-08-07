@@ -46,7 +46,7 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 		<?php endforeach ?>
 		</ul>
 	</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="tc-plugin-helper.js"></script>
 	<script>$(TheCity.PluginHelper.initPlugin('acstdev'))</script>
 </body>

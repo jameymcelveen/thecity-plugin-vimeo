@@ -4,8 +4,8 @@ if (TheCity == null || typeof(TheCity) != "object") { var TheCity = {}; }
 TheCity.PluginHelper = function() {
 	
 	var checkjQuery = function() {
-		if (jQuery) return true;
-		alert('jQuery is is required for tc-plugin-helper.js. You can add this to your html to fix this issue. <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>');
+		if (jQuery != null) return true;
+		alert('jQuery is is required for tc-plugin-helper.js. You can add this to your html to fix this issue. <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>');
 		return false;
 	};
 	
