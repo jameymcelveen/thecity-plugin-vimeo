@@ -22,9 +22,11 @@ TheCity.PluginHelper = function() {
 		// resize the containing IFrame to be tall enough to display all the content
 		// in the cild documemnt
 		initPlugin: function(subdomain) {
-			if (!checkjQuery()) return ; // do not need this check in here but the parent eample uses it.
+			if (!checkjQuery()) return ;
 			var src = 'https://' + subdomain + '.onthecity.org/#' + encodeURIComponent(document.location.href);
+			alert(src);
 			var documentHeight = $(document).height();
+			alert(documentHeight);
 			crossDomainPostMessage(documentHeight, src, frames[0]);
 		}
     };
