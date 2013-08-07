@@ -31,17 +31,11 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 		ul { list-style-type: none; margin: 0; padding: 0; }
 		li { display: inline; padding: 0; margin: 10px 2px; }
 		img { border: 0; }
-		img#portrait { float: left; margin-right: 5px; }
-		#stats { clear: both; }
 	</style>
 </head>
 <body>
 
-	<h1>Vimeo Simple API PHP Example</h1>
-	<div id="stats">
-		<img id="portrait" src="<?php echo $user->user->portrait_small ?>" />
-		<h2><?php echo $user->user->display_name ?>'s Videos</h2>
-	</div>
+	<h1>Sermons</h1>
 	<p id="bio"><?php echo $user->user->bio ?></p>
 	<div id="thumbs">
 		<ul>
