@@ -27,6 +27,7 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 <head>
 	<meta charset="utf-8">
 	<title>Vimeo Simple API Example</title>
+	<link rel="stylesheet" href="http://dcascn3rg03ga.cloudfront.net/appkit/v1.3/appkit.css"/>
 	<style>
 		ul { list-style-type: none; margin: 0; padding: 0; }
 		li { display: inline; padding: 0; margin: 10px 2px; }
@@ -41,7 +42,11 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 		<ul>
 		<?php foreach ($videos->video as $video): ?>
 			<li>
-				<a href="<?php echo $video->url ?>"><img src="<?php echo $video->thumbnail_medium ?>" /></a>
+				<a href="<?php echo $video->url ?>">
+					 <div class="thumb">
+						<img src="<?php echo $video->thumbnail_medium ?>" />
+					</div>
+					</a>
 			</li>
 		<?php endforeach ?>
 		</ul>
