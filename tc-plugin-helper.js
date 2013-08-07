@@ -24,9 +24,7 @@ TheCity.PluginHelper = function() {
 		initPlugin: function(subdomain) {
 			if (!checkjQuery()) return ;
 			var src = 'https://' + subdomain + '.onthecity.org/#' + encodeURIComponent(document.location.href);
-			alert(src);
 			var documentHeight = $(document).height();
-			alert(documentHeight);
 			crossDomainPostMessage(documentHeight, src, frames[0]);
 		}
     };
