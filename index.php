@@ -19,7 +19,7 @@
 		</ul>
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="tc-plugin-helper.js"></script>
+	<script src="tcplugin.helper.js"></script>
 	<script>$(TheCity.PluginHelper.initPlugin('acstdev'))</script>
 </body>
 </html>
