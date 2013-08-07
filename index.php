@@ -51,7 +51,7 @@ $videos = simplexml_load_string(curl_get($api_endpoint . '/videos.xml'));
 		var src = 'https://acstdev.onthecity.org/#' + encodeURIComponent(document.location.href);
 		//document.getElementById("xd_frame").src = src;
 
-	   	XD.postMessage(200, src, frames[0]);
+	   	XD.postMessage(600, src, frames[0]);
 
 	</script>
 </body>
